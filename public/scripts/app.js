@@ -34,11 +34,14 @@ sampleAlbums.push({
            });
 /* end of hard-coded data */
 
-
-
+//
+var source = $('#albums-template').html();
+ template = Handlebars.compile(source);
 
 $(document).ready(function() {
   console.log('app.js loaded!');
+  $albumList = $('#albumTarget');
+
 });
 
 
